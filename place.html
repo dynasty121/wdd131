@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Obinali uchenna david, homepage for my coursework this semester">
+    <meta name="author" content="Obinali uchenna david ">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Obinali uchenna david - Nigeria the Country
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1025px)" srcset="images/placeimage2.jpg">
+                <source media="(max-width: 1024px)" srcset="images/placeimage2.jpg">
+                <img src="images/placeimage2.jpg" alt="Landscape of Nigeria">
+            </picture>
+        </section>
+
+        <section class="overlay data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 923,769 sq km</p>
+            <p><strong>Population:</strong> 206,139,589</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+
+        <section class="overlay weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#FFA500" stroke-width="2" />
+                    <circle cx="12" cy="12" r="5" fill="#FFA500" />
+                </svg>
+            </div>
+            <p><strong>Temperature:</strong> 30 °C</p>
+            <p><strong>Conditions:</strong> Mostly Sunny</p>
+            <p><strong>Wind:</strong> 15 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy;<span id="currentYear"></span> Obinali uchenna david</p>
+            <p class="modification" id="lastModified">Last Modification:</p>
+        </div>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
