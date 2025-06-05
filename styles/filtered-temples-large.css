@@ -1,0 +1,35 @@
+@media (min-width: 1025px) {
+    main .temple-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    main h2 {
+        grid-column: span 3;
+    }
+    #temples{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 0;
+        border: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
