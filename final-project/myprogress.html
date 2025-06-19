@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Osabuohien Randalf Ehigiator, final project for my coursework this semester">
+    <meta name="author" content="Osabuohien Randalf Ehigiator">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Osabuohien Randalf Ehigiator
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+                Wellness Tracker
+            </h1>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="log.html">Log Activity</a>
+                </li>
+                <li>
+                    <a href="myprogress">My Progress</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="history">
+            <h2>All My Progress Logs</h2>
+            <div class="log-container">
+                <table id="activityTable">
+                    <thead>
+                        <tr>
+                            <th>Day/Time</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="logo-socials">
+                <h3>Wellness Tracker</h3>
+                <div class="socials">
+                    <a href="#" target="_blank">
+                        <img src="images/facebook.webp" alt="facebook">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/instagram.webp" alt="instagram">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/twitter.webp" alt="x">
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="dropdown-toggle">
+                    Quick Links <span class="arrow">&#9662;</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="log.html">Log Activity</a></li>
+                    <li><a href="myprogress.html">My Progress</a></li>
+                    <li><a href="refrence/attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p class="copyright">&copy<span id="currentYear"></span> Wellness Tracker | Osabuohien Randalf Ehigiator |
+                BYU Final Project</p>
+            <p class="modification" id="lastModified">Last Modification:</p>
+        </div>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+
+</html>
